@@ -1,4 +1,6 @@
 Used only in ubuntu
 
-Runing in background
+- Permission to execute
+  `chmod +x internet_check`
+- Runing in background
 `nohup ./internet_check`
