@@ -14,8 +14,18 @@ Used only in ubuntu
 - Runing in background
 `nohup ./internet_check`
 
-TODO
-- compatible with windows and macos
-- start service background in GUI
-- run in tray
-- simple GUI to configure timeout endpoint check
+## FEATURES
+- 🖥️  Monitors your internet connection and logs connectivity issues.
+- 🚀  Simple and lightweight CLI tool, easy to run on any Ubuntu system.
+
+## Future Roadmap (TODO)
+- 💻  Make the tool compatible with Windows and macOS.
+- 🚀  Implement the capability to start as a background service, especially in GUI environments.
+- 📌  Facilitate running in the system tray for easier access and monitoring.
+- 🖼️  Develop a simple GUI for configuring endpoint check timeouts and other settings.
+
+🙏  Your contributions, be it in the form of code, ideas, or feedback, are warmly welcomed. Let's make GONETFY even better!
+
+---
+
+💡 Suggestions and contributions are always appreciated as we aim to make GONETFY a universal tool for our connectivity needs.
