@@ -2,6 +2,7 @@
 Simple internet checker activity
 
 🛠️ **This is a Hobby Project** 🛠️
+This project was developed during my free time and does not have professional support. Contributions and suggestions are welcome, but responses may not be immediate. Let's keep the passion for coding alive! 🚀
 
 Used only in ubuntu
 ## USAGE
