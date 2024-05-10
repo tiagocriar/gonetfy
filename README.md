@@ -1,8 +1,11 @@
 # GONETFY
-Simple internet checker activity
+A simple internet connectivity checker
 
-🛠️ **This is a Hobby Project** 🛠️
-This project was developed during my free time and does not have professional support. Contributions and suggestions are welcome, but responses may not be immediate. Let's keep the passion for coding alive! 🚀
+🛠️ **Hobby Project** 🛠️
+
+This project was created in my spare time and is not backed by professional support. I appreciate any contributions and suggestions, though I ask for your patience as my response times may vary. Together, let's fuel our coding enthusiasm! 🚀
+
+**Compatibility:** Currently, only for Ubuntu.
 
 Used only in ubuntu
 ## USAGE
