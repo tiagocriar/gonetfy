@@ -1,5 +1,10 @@
-Used only in ubuntu
+# GONETFY
+Simple internet checker activity
 
+🛠️ **This is a Hobby Project** 🛠️
+
+Used only in ubuntu
+## USAGE
 - Permission to execute
   `chmod +x internet_check`
 - Runing in background
