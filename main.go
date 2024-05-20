@@ -11,22 +11,31 @@ var warningAlreadySent = false
 
 func checkInternet() {
 	client := &http.Client{
-        Timeout: 2 * time.Second,
-    }
+		Timeout: 2 * time.Second,
+	}
 
-     _, err := client.Get("http://google.com")
-	log.Println(err)
-    if err == nil {
-        if warningAlreadySent {
-            sendInfo()
-            warningAlreadySent = false
-        }
-    } else {
-        if !warningAlreadySent {
-            sendWarning()
-            warningAlreadySent = true
-        }
-    }
+	resp, err := client.Get("http://clients3.google.com/generate_204")
+	if err != nil {
+		log.Println(err)
+		if !warningAlreadySent {
+			sendWarning()
+			warningAlreadySent = true
+		}
+		return
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode == http.StatusNoContent {
+		if warningAlreadySent {
+			sendInfo()
+			warningAlreadySent = false
+		}
+	} else {
+		if !warningAlreadySent {
+			sendWarning()
+			warningAlreadySent = true
+		}
+	}
 }
 
 func sendWarning() {
