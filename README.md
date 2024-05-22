@@ -10,9 +10,9 @@ This project was created in my spare time and is not backed by professional supp
 Used only in ubuntu
 ## USAGE
 - Permission to execute
-  `chmod +x internet_check`
+  `chmod +x gonetfy`
 - Runing in background
-`nohup ./internet_check`
+`nohup ./gonetfy`
 
 ## FEATURES
 - 🖥️  Monitors your internet connection and logs connectivity issues.

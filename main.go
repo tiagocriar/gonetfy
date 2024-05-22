@@ -1,10 +1,10 @@
 package main
 
 import (
-    "net/http"
-    "os/exec"
-    "time"
 	"log"
+	"net/http"
+	"os/exec"
+	"time"
 )
 
 var warningAlreadySent = false
@@ -39,17 +39,17 @@ func checkInternet() {
 }
 
 func sendWarning() {
-    exec.Command("notify-send", "Internet caiu, man! Relaxa e espera um pouco.").Run()
+	exec.Command("notify-send", "Internet caiu, man! Relaxa e espera um pouco.").Run()
 }
 
 func sendInfo() {
-    warningAlreadySent = false
-    exec.Command("notify-send", "Internet voltou, hora de trabalhar!").Run()
+	warningAlreadySent = false
+	exec.Command("notify-send", "Internet voltou, hora de trabalhar!").Run()
 }
 
 func main() {
-    for {
-        checkInternet()
-        time.Sleep(3 * time.Second)
-    }
+	for {
+		checkInternet()
+		time.Sleep(3 * time.Second)
+	}
 }
