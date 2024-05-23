@@ -11,7 +11,7 @@ var warningAlreadySent = false
 
 func checkInternet() {
 	client := &http.Client{
-		Timeout: 2 * time.Second,
+		Timeout: 10 * time.Second,
 	}
 
 	resp, err := client.Get("http://clients3.google.com/generate_204")
